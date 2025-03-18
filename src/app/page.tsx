@@ -7,7 +7,7 @@ import Image from 'next/image';
 const LandingPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [showModal, setShowModal] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState('premium');
+  // const [selectedPlan, setSelectedPlan] = useState('premium');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -469,7 +469,7 @@ const LandingPage: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Thank You!</h3>
               <p className="text-gray-600 mb-6">
-                We've received your request. We'll notify you when Endorsify launches.
+                We have received your request. We will notify you when Endorsify launches.
               </p>
               <button
                 onClick={() => setShowModal(false)}
